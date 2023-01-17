@@ -9,7 +9,7 @@ end)
 CreateThread(function()
     for id in pairs(Config.Locations) do
         local blip = AddBlipForCoord(Config.Locations[id]["main"].x, Config.Locations[id]["main"].y, Config.Locations[id]["main"].z)
-        SetBlipSprite(blip, 380)
+        SetBlipSprite(blip, 0)
         SetBlipDisplay(blip, 4)
         SetBlipScale(blip, 0.7)
         SetBlipAsShortRange(blip, true)
